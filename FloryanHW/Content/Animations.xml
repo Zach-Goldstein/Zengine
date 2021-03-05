@@ -1,0 +1,31 @@
+﻿<Sprites>
+  <Block default="idle">
+    <Animation name="idle" set="Blue" start="1" end="2" />
+    <Animation name="move" set="Purple" start="1" end="1" next="idle" />
+  </Block>
+  <Mario default="idle">
+    <Animation name="idle" set="Mario" start="1" end="1" />
+  </Mario>
+  <Baren default="idle">
+    <Animation name="idle" set="Baren" start="1" end="1"/>
+  </Baren>
+  <Ice default="idle">
+    <Animation name="idle" set="Ice" start="1" end="1"/>
+  </Ice>
+  <Lava default="idle">
+    <Animation name="idle" set="Lava" start="1" end="1"/>
+  </Lava>
+  <Terran default="idle">
+    <Animation name="idle" set="Terran" start="1" end="1"/>
+  </Terran>
+  <Moon default="idle">
+    <Animation name="idle" set="Moon" start="1" end="60"/>
+  </Moon>
+  <Coin default="idle">
+    <Animation name="idle" set="Coins/Coin" start="0" end="17"/>
+  </Coin>
+  <Player1 default="idle">
+    <Animation name="walk" set="Graphics/Player/p1_walk/PNG/p1_walk" start="1" end="11" format="00" splitter="" next="idle"/>
+    <Animation name="idle" set="Graphics/Player/p1_stand" />
+  </Player1>
+</Sprites>

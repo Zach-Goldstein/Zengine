@@ -1,0 +1,18 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+using Engine;
+
+namespace FloryanHW
+{
+    public class TestScene : Scene
+    {
+        public TestScene()
+        {
+            Add(new Mario());
+        }
+    }
+}
