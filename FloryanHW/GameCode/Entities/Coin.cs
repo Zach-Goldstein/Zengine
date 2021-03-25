@@ -16,7 +16,7 @@ namespace FloryanHW
             AnimatedSprite coinSprite = new AnimatedSprite(@"spritesheet0.png", @"spritesheet.xml", @"Animations.xml", @"Coin");
             Add(coinSprite);
             coinSprite.Play("idle");
-            Transform.Scale = 2;
+            Transform.Scale = 5;
         }
 
         public Coin()

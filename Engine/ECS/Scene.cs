@@ -1,10 +1,11 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 
 namespace Engine
 {
-    public class Scene
+    public class Scene : IEnumerable<Entity>
     {
         private List<Entity> entities;
         private HashSet<Entity> entitiesToRemove;
@@ -70,6 +71,16 @@ namespace Engine
             if (entities.Count > 0)
                 foreach (Entity e in entities)
                     e.UpdateComponents();
+        }
+
+        public IEnumerator<Entity> GetEnumerator()
+        {
+            return entities.GetEnumerator();
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return entities.GetEnumerator();
         }
     }
 }

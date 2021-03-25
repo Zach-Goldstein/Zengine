@@ -18,6 +18,13 @@ namespace FloryanHW
 
             Add(p);
             Add(c);
+
+            Add(new Tile(@"Graphics/Tiles/grass", new Vector2(0, 500)));
+            Add(new Tile(@"Graphics/Tiles/grass", new Vector2(70, 500)));
+            Add(new Tile(@"Graphics/Tiles/grass", new Vector2(140, 500)));
+            Add(new Tile(@"Graphics/Tiles/grass", new Vector2(210, 500)));
+            Add(new Tile(@"Graphics/Tiles/grass", new Vector2(280, 500)));
+            Add(new Tile(@"Graphics/Tiles/grass", new Vector2(350, 500)));
         }
     }
 }

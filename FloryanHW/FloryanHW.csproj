@@ -44,9 +44,11 @@
     <Compile Include="Game1.cs" />
     <Compile Include="GameCode\Entities\Block.cs" />
     <Compile Include="GameCode\Entities\Coin.cs" />
+    <Compile Include="GameCode\Entities\LevelGrid.cs" />
     <Compile Include="GameCode\Entities\Mario.cs" />
     <Compile Include="GameCode\Entities\Planet.cs" />
     <Compile Include="GameCode\Entities\Player.cs" />
+    <Compile Include="GameCode\Entities\Tile.cs" />
     <Compile Include="GameCode\Scenes\CollisionScene.cs" />
     <Compile Include="GameCode\Scenes\PlanetScene.cs" />
     <Compile Include="GameCode\Scenes\TestScene.cs" />

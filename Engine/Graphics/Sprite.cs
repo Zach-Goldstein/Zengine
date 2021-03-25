@@ -9,6 +9,8 @@ namespace Engine
     {
         public Image Image;
         private float alpha;
+        public Vector2 Offset;
+
         public float Alpha
         {
             get => alpha;
@@ -24,18 +26,34 @@ namespace Engine
 
         public bool Flipped;
 
-        public Sprite(string filename)
+        public Sprite(string filename, Vector2 offset)
         {
             Image = new Image(filename);
             Alpha = 1;
             Flipped = false;
+
+            Offset = offset;
         }
 
-        public Sprite(string spriteSheetData, string spriteName)
+        public Sprite(string filename)
+            : this(filename, Vector2.Zero)
+        {
+
+        }
+
+        public Sprite(string spriteSheetData, string spriteName, Vector2 offset)
         {
             Image = Image.LoadSpriteSheet(spriteSheetData)[spriteName];
             Alpha = 1;
             Flipped = false;
+
+            Offset = offset;
+        }
+
+        public Sprite(string spriteSheetData, string spriteName)
+            : this(spriteSheetData, spriteName, Vector2.Zero)
+        {
+
         }
 
         public override void Update()
@@ -48,7 +66,7 @@ namespace Engine
 #pragma warning disable CS0618 // Type or member is obsolete
             Core.SpriteBatch.Draw(
                 Image.Texture,
-                Entity.GlobalPosition/* + (Entity.Transform.PivotPoint)/* * Entity.Transform.Scale*/,
+                Entity.GlobalPosition + Offset/* + (Entity.Transform.PivotPoint)/* * Entity.Transform.Scale*/,
                 null,
                 Image.SrcRect,
                 //Entity.ParentTransform is null ? Entity.Transform.PivotPoint : Entity.ParentTransform.PivotPoint/* - Image.Offset */, 
