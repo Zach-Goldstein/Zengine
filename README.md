@@ -19,5 +19,7 @@ Events are handled in the Event.cs class. The dispatcher is a single class, wher
 
 You can find an example of the events in FloryanHW/GameCode/Events/QuestManager.cs. The event is registered in FloryanHW/GameCode/Scenes/CollisionScene.cs, called from FloryanHW/GameCode/Entity/Coin.cs, and finally handled in QuestManager.cs.
 
-## Collision:
+## Collision & Physics:
 Collision is handled through Engine/Collision/Hitbox.cs. Note that matrix transformations are used to get the original hitbox points into the proper world coordinates. You can find the transformation functions in Engine/Util/MatrixTransforms.cs. An example of using collision information can be found in FloryanHW/GameCode/Entities/Player.cs.
+
+This is handled locally in a particular entity, rather than a Physics system like Zac's. Physics can be found in Player.cs.
