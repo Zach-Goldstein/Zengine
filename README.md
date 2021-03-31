@@ -12,7 +12,7 @@ The parody of this is in Engine/Graphics/Image.cs. This is a texture wrapper and
 How spritesheets work: Texture is packed into some png file (e.g., FloryanHW/Content/spritesheet0.png). All the individual sprite locations are index with (x, y) and (h, w) (e.g., spritesheet.xml). When a spritesheet is loaded, the whole texture is loaded and individual sprites/frames are derived from the base texture. Animations are defined in another xml file (e.g., Animations.xml) and which helps index the set of frames for each animation in Engine/Graphics/AnimatedSprite.cs. Every update(), the frame swaps to the next in the list.
 
 ## Transform:
-Each Entity has a Transform. You can find this in Util/Transform.cs. The variables are local, but calling global version traverses the parents and makes it moreso global. Unfortunately, like Zac's it's not contained within one matrix.
+Each Entity has a Transform. You can find this in Engine/Util/Transform.cs. The variables are local, but calling global version traverses the parents and makes it moreso global. Unfortunately, like Zac's it's not contained within one matrix.
 
 ## Events:
 Events are handled in the Event.cs class. The dispatcher is a single class, where events are registered and emitted. For a class to be a listener, it has to be an IEventListener and implement HandleEvent locally.
