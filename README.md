@@ -1,7 +1,7 @@
 # Zengine
 A light, test game engine built around MonoGame/XNA
 
-@Floryan Things to look for
+@Floryan Things to look for. You can download Release.zip for an exe. Built for Windows, not sure if cross-platform
 
 ## ECS:
 This is in the Engine subproject. Scenes contain entities and entities contain components. The Scene class and Entity class have managers for Entities and Components respectively
