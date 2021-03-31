@@ -17,7 +17,7 @@ Each Entity has a Transform. You can find this in Engine/Util/Transform.cs. The 
 ## Events:
 Events are handled in the Event.cs class. The dispatcher is a single class, where events are registered and emitted. For a class to be a listener, it has to be an IEventListener and implement HandleEvent locally.
 
-You can find an example of the events in FloryanHW/GameCode/Events/QuestManager.cs. The event is registered in Floryan/GameCode/Scenes/CollisionScene.cs and triggered in QuestManager.cs.
+You can find an example of the events in FloryanHW/GameCode/Events/QuestManager.cs. The event is registered in Floryan/GameCode/Scenes/CollisionScene.cs, called from FloryanHW/GameCode/Entity/Coin.cs, and finally handled in QuestManager.cs.
 
 ## Collision:
 Collision is handled through Engine/Collision/Hitbox.cs. Note that matrix transformations are used to get the original hitbox points into the proper world coordinates. You can find the transformation functions in Engine/Util/MatrixTransforms.cs. An example of using collision information can be found in FloryanHW/GameCode/Entities/Player.cs.
