@@ -61,6 +61,8 @@ namespace Engine
                 spriteList = new Dictionary<string, Image>();
                 loadedSpriteSheet.Add(spriteSheetData, spriteList);
             }
+            else
+                return spriteList;
 
             XmlDocument xml = new XmlDocument();
             xml.Load(TitleContainer.OpenStream(Core.Instance.Content.RootDirectory + "\\" + spriteSheetData));

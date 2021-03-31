@@ -27,5 +27,6 @@
   <Player1 default="idle">
     <Animation name="walk" set="Graphics/Player/p1_walk/PNG/p1_walk" start="1" end="11" format="00" splitter="" next="idle"/>
     <Animation name="idle" set="Graphics/Player/p1_stand" />
+    <Animation name="duck" set="Graphics/Player/p1_duck" />
   </Player1>
 </Sprites>

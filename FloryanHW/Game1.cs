@@ -37,6 +37,7 @@ namespace FloryanHW
         {
             base.LoadContent();
             // TODO: use this.Content to load your game content here
+            Image.LoadSpriteSheet(@"spritesheet.xml");
 
             //TestScene ts = new TestScene();
             //Scene = ts;

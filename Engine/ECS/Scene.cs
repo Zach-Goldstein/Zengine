@@ -21,7 +21,8 @@ namespace Engine
         public virtual void Update()
         {
             foreach (Entity e in entities)
-                e.Update();
+                if (e.Active)
+                    e.Update();
 
             UpdateEntities();
         }

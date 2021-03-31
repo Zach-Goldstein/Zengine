@@ -49,6 +49,7 @@
     <Compile Include="GameCode\Entities\Planet.cs" />
     <Compile Include="GameCode\Entities\Player.cs" />
     <Compile Include="GameCode\Entities\Tile.cs" />
+    <Compile Include="GameCode\Events\QuestManager.cs" />
     <Compile Include="GameCode\Scenes\CollisionScene.cs" />
     <Compile Include="GameCode\Scenes\PlanetScene.cs" />
     <Compile Include="GameCode\Scenes\TestScene.cs" />

@@ -63,9 +63,9 @@ namespace Engine
     {
         public string EventType { get; private set; }
 
-        public EventDispatcher Source { get; private set; }
+        public object Source { get; private set; }
 
-        public Event(string eventType, EventDispatcher src)
+        public Event(string eventType, object src)
         {
             EventType = eventType;
             Source = src;

@@ -11,15 +11,18 @@ namespace FloryanHW
 {
     public class Tile : Entity
     {
-        public Tile(string tilename)
+        public Tile(string tilename) :
+            this(tilename, Vector2.Zero, true)
+        {
+            
+        }
+
+        public Tile(string tilename, Vector2 location, bool hasCollision = true)
         {
             Sprite s = new Sprite("spritesheet.xml", tilename);
             Add(s);
-            Add(new Hitbox(Vector2.Zero, s.Image.Width, s.Image.Height));
-        }
-
-        public Tile(string tilename, Vector2 location) : this(tilename)
-        {
+            if (hasCollision)
+                Add(new Hitbox(Vector2.Zero, s.Image.Width, s.Image.Height));
             Position = location;
         }
     }
